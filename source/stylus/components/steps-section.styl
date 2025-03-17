@@ -1,0 +1,187 @@
+.steps-section
+  background-image: url('../images/steps-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #000
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 5px
+    +above($breakpoints.sm)
+      padding 30px 0
+    +above($breakpoints.md)
+      padding 60px 0
+    +above($breakpoints.xxl)
+      padding 99px 0 92px
+
+  &__img
+    position: absolute
+    z-index -1
+    width: 100px;
+    height: auto;
+    left: 92%;
+    transform: translateX(-50%);
+    top: 99px;
+    +above($breakpoints.sm)
+      width: 240px;
+      top: 155px;
+      left: 48%;
+    +above($breakpoints.md)
+      width: 340px;
+      top: 269px;
+      left: 48%;
+    +above($breakpoints.xxl)
+      width 392px
+      top: 385px
+      left: 45%
+
+  &__title
+    display: flex
+    align-items: center
+    justify-content space-between
+    gap: 10px
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      align-items: flex-start
+      padding-bottom 40px
+    +above($breakpoints.md)
+      padding-bottom 90px
+    +above($breakpoints.xxl)
+      padding-bottom 142px
+
+  &__title-mark
+    text-transform: uppercase;
+    background: linear-gradient(236deg, #d73857 0%, #f50 54.32%, #11ccb2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  &__title-inner
+    background-image: url('../images/steps-section-title-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content center
+    text-align: end
+    aspect-ratio: 187 / 103
+    flex-shrink: 0
+    width 127px
+    padding-right 8px
+    +above($breakpoints.sm)
+      width 135px
+      padding-right 12px
+    +above($breakpoints.md)
+      width 170px
+      padding-right 15px
+    +above($breakpoints.xxl)
+      width 187px
+      padding-right 17px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      gap: 30px 260px
+      height: 260px
+    +above($breakpoints.md)
+      gap: 50px 350px
+      height: 362px
+    +above($breakpoints.xxl)
+      gap: 80px 430px
+      height: 421px
+
+  &__card
+    width 280px !important
+    display: flex
+    align-items: center
+    gap: 7px
+    +above($breakpoints.sm)
+      width: 220px !important;
+      height: 65px
+      gap: 15px;
+    +above($breakpoints.md)
+      width: 250px !important;
+      height: 87px
+      gap: 18px;
+    +above($breakpoints.xxl)
+      width 310px !important
+      height: 87px
+      gap: 20px
+
+  &__card-icon
+    flex-shrink: 0
+    width 55px
+    height: 55px
+    border-radius: 50%
+    +above($breakpoints.sm)
+      width 47px
+      height: 47px
+    +above($breakpoints.md)
+      width 67px
+      height: 67px
+    +above($breakpoints.xxl)
+      width 87px
+      height: 87px
+
+  &__card-block
+    display: flex
+    flex-direction: column
+
+  &__card-title
+    text-transform: uppercase
+    background: linear-gradient(236deg, #d73857 0%, #f50 54.32%, #11ccb2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  &__card-wrapper
+    position relative
+    width 100%
+    background: linear-gradient(143deg, #11ccb2 -100%, #2b2b2b 24%, #2b2b2b 67.5%, #d73857 182%);
+    backdrop-filter: blur(10px)
+    padding 20px 5px 5px
+    border-radius: 15px
+    +above($breakpoints.sm)
+      padding 25px 5px
+      border-radius: 20px
+    +above($breakpoints.md)
+      padding 45px 5px
+      border-radius: 25px
+    +above($breakpoints.xxl)
+      padding 65px 5px
+      border-radius: 30px
+
+  &__container-2
+    padding-bottom: 20px
+    +above($breakpoints.sm)
+      padding-bottom: 30px
+    +above($breakpoints.md)
+      padding-bottom: 60px
+    +above($breakpoints.xxl)
+      padding-bottom: 99px
+
+  &__item
+    width 280px !important
+    +above($breakpoints.sm)
+      width 358px !important
+    +above($breakpoints.md)
+      width 473px !important
+    +above($breakpoints.xxl)
+      width 580px !important
+
+  &__item-img
+    width 100%
+    height: auto
+    border-radius: 10px
+    +above($breakpoints.sm)
+      border-radius: 15px
+    +above($breakpoints.md)
+      border-radius: 20px
+    +above($breakpoints.xxl)
+      border-radius: 25px

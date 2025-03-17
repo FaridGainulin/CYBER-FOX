@@ -1,0 +1,33 @@
+section.main-section
+  include ../components/header.pug
+  .wrapper
+    .main-section__container
+      .main-section__box
+        h1.main-section__title.font-w-b-regular.font-s-46.text-up
+          | Зарабатывайте 
+          br.no-br
+          span.color-orange от 3,5 млн тенге / месяц 
+          br.no-br
+          | на своем 
+          br.no-br
+          | компьютерном клубе
+        .main-section__sub-title
+          img.main-section__icon(src="images/main-section-icon.png" loading="lazy" width="128" height="118" alt="icon")
+          .font-s-20
+            | Запустите трендовый бизнес по франшизе 
+            br.no-br
+            | «CYBER FOX» всего за 2 месяца
+      .main-section__bottom
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Узнать условия
+        .main-section__block
+          img.main-section__block-img(src="images/main-section-block-img.png" loading="lazy" width="176" height="177" alt="image")
+          .font-s-20-a
+            span.color-green Получите 
+            br.no-br
+            | подробный план 
+            br.no-br
+            | открытия клуба

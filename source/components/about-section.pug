@@ -1,0 +1,47 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      img.about-section__img(src="images/about-section-img.png" loading="lazy" width="380" height="420" alt="image")
+      h2.about-section__title
+        span.font-s-32 — CYBER FOX 
+        span.about-section__title-mark.font-w-b-regular.font-s-46 Кто мы такие?
+      .about-section__block.font-s-18
+        .about-section__text
+          | Наша команда на рынке уже с 2016 года и за этот период мы открыли уже десятки 
+          br.no-br
+          | компьютерных клубов в разных городах Казахстана, а сегодня занимаемся 
+          br.no-br
+          | развитием бренда «CYBER FOX»
+        .about-section__text.about-section__text--secondary
+          | Мы всегда стремимся к развитию и ищем новые точки роста, поэтому готовы к 
+          br.no-br
+          | партнерству с предпринимателями, заинтересованных в активном развитии 
+          br.no-br
+          | бизнеса и бренда
+        .about-section__text
+          | Мы передадим вам все необходимые данные для успешного старта, поможем 
+          br.no-br
+          | запустить все процессы с нуля и будем сопровождать даже после открытия 
+          br.no-br
+          | клуба. Станьте частью нашей команды!
+      .about-section__bottom
+        .about-section__bottom-text
+          img.about-section__bottom-img(src="images/about-section-bottom-img.png" loading="lazy" width="328" height="194" alt="image")
+          .font-s-16
+            | Узнайте, какие инвестиции 
+            br.no-br
+            | потребуются для старта бизнеса
+          .font-w-b-regular.font-s-28.text-up
+            span.color-orange Скачайте 
+            br.no-br
+            | финансовую модель 
+            br.no-br
+            | франшизы
+        form.about-section__form(data-feedback-form)
+          textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Ваш вопрос")
+          .about-section__form-column
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Задать вопрос
+  include ../components/start-section.pug

@@ -1,0 +1,58 @@
+.header
+  &__container
+    display: flex
+    justify-content space-between
+    align-items: center
+    padding-top 10px
+    +above($breakpoints.sm)
+      padding-top 30px
+    +above($breakpoints.md)
+      padding-top 40px
+    +above($breakpoints.xxl)
+      padding-top 58px
+
+  &__brand-block
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      gap: 10px
+    +above($breakpoints.sm)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__logo
+    width 100px
+    height: auto
+    +above($breakpoints.sm)
+      width 120px
+    +above($breakpoints.md)
+      width 140px
+    +above($breakpoints.xxl)
+      width 168px
+
+  &__line
+    +above($breakpoints.sm)
+      width 1px
+      height: 40px
+      background-color #0DE5CC
+      transform: rotate(20deg)
+    +above($breakpoints.md)
+      height: 45px
+    +above($breakpoints.xxl)
+      height: 50px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      color: #E8EAEE
+
+  &__brand-mobile
+    text-align: center
+    padding 10px 0
+    margin 5px 0 0
+    backdrop-filter: blur(35px);
+    background: linear-gradient(180deg, #272727 0%, rgba(39, 39, 39, 0) 100%);
+    +above($breakpoints.sm)
+      display: none

@@ -1,0 +1,133 @@
+.invest-section
+  background-image: url('../images/invest-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #000
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    padding 20px 0 5px
+    +above($breakpoints.sm)
+      padding 30px 0
+    +above($breakpoints.md)
+      padding 60px 0
+    +above($breakpoints.xxl)
+      padding 84px 0 95px
+
+  &__title-mark
+    background: linear-gradient(258deg, #d73857 0%, #f50 54.32%, #11ccb2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  &__icon
+    width 20px
+    height: auto
+    margin 15px auto
+    +above($breakpoints.sm)
+      width 25px
+      height: auto
+      margin 10px auto 20px
+    +above($breakpoints.xxl)
+      width 28px
+      height: auto
+      margin 12px auto 25px
+    +above($breakpoints.xxl)
+      width 30px
+      height: 27px
+      margin 12px auto 34px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card-title
+    border-radius: 13px
+    +above($breakpoints.sm)
+      border-radius: 18px
+    +above($breakpoints.md)
+      border-radius: 23px
+    +above($breakpoints.xxl)
+      border-radius: 28px
+
+  &__card
+    width 280px !important
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color #fff
+    color: #000
+    border-radius: 16px
+    +above($breakpoints.sm)
+      width 235px !important
+      border-radius: 21px
+    +above($breakpoints.md)
+      width 308px !important
+      border-radius: 26px
+    +above($breakpoints.xxl)
+      width 380px !important
+      height: 516px
+      border-radius: 31px
+
+  &__card-title
+    width 100%
+    display: flex
+    justify-content center
+    align-items: center
+    height: 55px
+    color: $color-green
+    background: linear-gradient(126deg, #11ccb2 -30%, #2b2b2b 51%)
+    +above($breakpoints.sm)
+      height: 61px
+    +above($breakpoints.md)
+      height: 81px
+    +above($breakpoints.xxl)
+      height: 91px
+    &--orange
+      color: $color-orange
+      background: linear-gradient(126deg, #ff5100 -30%, #2b2b2b 51%);
+    &--red
+      color: $color-red
+      background: linear-gradient(126deg, #d73857 -30%, #2b2b2b 51%);
+
+  &__card-img
+    width 90px
+    height: auto
+    margin 10px 0 5px
+    +above($breakpoints.sm)
+      width 88px
+      margin 13px 0 5px
+    +above($breakpoints.md)
+      width 98px
+      margin 16px 0 6px
+    +above($breakpoints.xxl)
+      width 108px
+      margin 18px 0 7px
+
+  &__card-text
+    padding 0 30px
+    +above($breakpoints.sm)
+      padding 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    gap: 5px
+    width 230px
+    margin 10px 0 20px
+    +above($breakpoints.sm)
+      width 200px
+      margin 13px 0 25px
+    +above($breakpoints.md)
+      width 240px
+      margin 16px 0 30px
+    +above($breakpoints.xxl)
+      width 280px
+      margin 18px 0 36px

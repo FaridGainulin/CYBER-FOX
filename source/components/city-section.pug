@@ -1,0 +1,31 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__logo(src="images/city-section-logo.png" loading="lazy" width="280" height="44" alt="logo")
+      h2.city-section__title.font-w-b-regular.font-s-46.text-up
+        span.color-green Откройте 
+        | свой 
+        br
+        | компьютерный клуб
+      .city-section__sub-title.font-s-30-a.text-up
+        | и зарабатывайте 
+        span.color-red от 43 000 000 тенге 
+        br
+        | чистой прибыли в гоД
+      .city-section__bottom
+        form.city-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="city" autocomplete="off" placeholder="Город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") ПРОВЕРИТЬ ГОРОД
+        .city-section__block
+          img.city-section__block-img(src="images/city-section-block-img.png" loading="lazy" width="182" height="183" alt="image")
+          .font-s-20-a
+            span.color-green Проверьте 
+            br.no-br
+            | свободен ли ваш 
+            br.no-br
+            | город для работы 
+            br.no-br
+            | по франшизе
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="870" height="788" alt="image")

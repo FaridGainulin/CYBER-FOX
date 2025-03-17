@@ -1,0 +1,102 @@
+.bullet-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 15px 0
+  +above($breakpoints.sm)
+    display: none
+  &--left
+    justify-content start
+  &--right
+    justify-content flex-end
+
+  .swiper-pagination-bullet
+    background-color $color-bullet
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    opacity: 1
+    position relative
+  .swiper-pagination-bullet-active
+    transform: scale(1.5)
+    transition transform 0.8s
+    background: linear-gradient(162deg, #11ccb2 0%, #fb7033 50.5%, #d73857 100%);
+
+.desktop-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 15px 0
+  +above($breakpoints.sm)
+    display: none
+  &--left
+    justify-content start
+  &--right
+    justify-content flex-end
+
+  .swiper-pagination-bullet
+    background-color $color-bullet
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    opacity: 1
+    position relative
+  .swiper-pagination-bullet-active
+    transform: scale(1.5)
+    transition transform 0.8s
+    background: linear-gradient(162deg, #11ccb2 0%, #fb7033 50.5%, #d73857 100%);
+
+
+.button-prev,
+.button-next
+  display: none
+  +above($breakpoints.sm)
+    display: block
+    position: absolute
+    z-index 1
+    border-radius: 50%
+    transition transform 0.3s, top 0.8s
+  &:hover
+    transform: scale(1.1)
+  &:active
+      transform: translateY(3px)
+  img
+    +above($breakpoints.sm)
+      box-shadow: 0 0 15px 0 #f34449;
+      border-radius: 50%
+      width 39px
+      height: 39px
+    +above($breakpoints.md)
+      width 49px
+      height: 49px
+    +above($breakpoints.xxl)
+      width 59px
+      height: 59px
+
+.button-prev
+  +above($breakpoints.sm)
+    top: 170px
+    left: 7px
+  +above($breakpoints.md)
+    top: 240px
+    left: 4px
+  +above($breakpoints.xxl)
+    top: 287px
+    left: 39px
+
+.button-next
+  +above($breakpoints.sm)
+    top: 170px
+    right: 7px
+  +above($breakpoints.md)
+    top: 240px
+    right: 4px
+  +above($breakpoints.xxl)
+    top: 287px
+    right: 39px
+  img
+    +above($breakpoints.sm)
+      transform: rotate(180deg)
+
