@@ -9,7 +9,7 @@ section.city-section
         | компьютерный клуб
       .city-section__sub-title.font-s-30-a.text-up
         | и зарабатывайте 
-        span.color-red от 43 000 000 тенге 
+        span.color-red от 43 млн
         br
         | чистой прибыли в гоД
       .city-section__bottom
@@ -18,6 +18,8 @@ section.city-section
           input.input(type="text" name="city" autocomplete="off" placeholder="Город")
           input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
           button.btn(type="submit") ПРОВЕРИТЬ ГОРОД
+          .city-section__agree-wrapper
+            include ../components/agree.pug
         .city-section__block
           img.city-section__block-img(src="images/city-section-block-img.png" loading="lazy" width="182" height="183" alt="image")
           .font-s-20-a

@@ -23,6 +23,8 @@ section.invest-section
               input.input.input--brown(type="text" name="name" autocomplete="off" placeholder="Имя")
               input.input.input--brown(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
               button.btn(type="submit") ПОЛУЧИТЬ
+              .invest-section__agree-wrapper
+                include ../components/agree.pug
           .invest-section__card.swiper-slide
             .invest-section__card-title.invest-section__card-title--orange.font-w-b-regular.font-s-24.text-up Стандарт
             img.invest-section__card-img(src="images/invest-section-card-img.png" loading="lazy" width="108" height="69" alt="image")
@@ -37,6 +39,8 @@ section.invest-section
               input.input.input--brown(type="text" name="name" autocomplete="off" placeholder="Имя")
               input.input.input--brown(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
               button.btn(type="submit") ПОЛУЧИТЬ
+              .invest-section__agree-wrapper
+                include ../components/agree.pug
           .invest-section__card.swiper-slide
             .invest-section__card-title.invest-section__card-title--red.font-w-b-regular.font-s-24.text-up Макси
             img.invest-section__card-img(src="images/invest-section-card-img.png" loading="lazy" width="108" height="69" alt="image")
@@ -51,4 +55,6 @@ section.invest-section
               input.input.input--brown(type="text" name="name" autocomplete="off" placeholder="Имя")
               input.input.input--brown(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
               button.btn(type="submit") ПОЛУЧИТЬ
+              .invest-section__agree-wrapper
+                include ../components/agree.pug
         .bullet-pagination

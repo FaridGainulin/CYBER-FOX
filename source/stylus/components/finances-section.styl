@@ -8,13 +8,13 @@
   &__container
     position relative
     z-index 1
-    padding 20px 0
+    padding 20px 0 30px
     +above($breakpoints.sm)
       padding 90px 0
     +above($breakpoints.md)
       padding 150px 0
     +above($breakpoints.xxl)
-      padding 200px 0 267px
+      padding 200px 0 247px
 
   &__title
     position relative
@@ -201,21 +201,22 @@
 
   &__img
     position: absolute
-    width: 90px;
+    width: 95px;
     height: auto;
-    top: 125px;
-    right: -6px;
+    top: 127px;
+    right: -15px;
     +above($breakpoints.sm)
-      width: 157px;
-      top: 354px;
-      right: 0
+      width: 165px;
+      top: 366px;
+      right: -13px;
     +above($breakpoints.md)
-      width 210px
-      top: 520px
+      width: 225px;
+      top: 525px;
+      right: -20px;
     +above($breakpoints.xxl)
-      width 329px
-      top: 568px
-      right: -17px
+      width: 303px;
+      top: 651px;
+      right: -5px;
 
   &__bottom
     position relative
@@ -237,15 +238,15 @@
     border-radius: 8px
     +above($breakpoints.sm)
       width 355px
-      height: 250px
+      height: 280px
       border-radius: 12px
     +above($breakpoints.md)
       width 470px
-      height: 310px
+      height: 330px
       border-radius: 16px
     +above($breakpoints.xxl)
       width 578px
-      height: 360px
+      height: 380px
       border-radius: 20px
 
   &__bottom-left
@@ -284,7 +285,7 @@
     align-items: center
     justify-content center
     gap: 12px
-    height: 190px
+    height: 230px
     text-align: center
     background-image: url('../images/finances-section-bottom-bg.jpg')
     background-repeat: no-repeat
@@ -303,6 +304,11 @@
       width 250px
     +above($breakpoints.xxl)
       width 280px
+
+  &__agree-wrapper
+    margin-top 5px
+    +above($breakpoints.sm)
+      margin-top 10px
 
   &__icon
     position: absolute

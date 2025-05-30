@@ -3,7 +3,7 @@
   &__container
     position relative
     z-index 1
-    padding-bottom 15px
+    padding-bottom 50px
     +above($breakpoints.sm)
       padding-bottom 30px
     +above($breakpoints.md)
@@ -109,6 +109,25 @@
     +above($breakpoints.xxl)
       width 93px
       height: 93px
+
+  &__box-img
+    position: absolute
+    width: 50px;
+    height: auto;
+    top: 0px;
+    right: -25px;
+    +above($breakpoints.sm)
+      width: 145px;
+      top: -16px;
+      right: -41px;
+    +above($breakpoints.md)
+      width: 220px;
+      top: -20px;
+      right: -67px;
+    +above($breakpoints.xxl)
+      width: 287px;
+      top: -26px;
+      right: -82px;
 
   &__title
     text-align: center

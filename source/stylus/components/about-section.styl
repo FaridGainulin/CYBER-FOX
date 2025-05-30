@@ -16,14 +16,14 @@
     +above($breakpoints.md)
       padding 70px 0
     +above($breakpoints.xxl)
-      padding 95px 0 107px
+      padding 95px 0 97px
 
   &__img
     position: absolute
     z-index -1
     width: 200px;
     height: auto;
-    top: 772px;
+    top: 805px;
     right: 53px;
     +above($breakpoints.sm)
       width: 230px;
@@ -111,13 +111,13 @@
   &__form
     border-radius: 10px
     +above($breakpoints.sm)
-      height: 270px
+      height: 290px
       border-radius: 15px
     +above($breakpoints.md)
-      height: 330px
+      height: 350px
       border-radius: 20px
     +above($breakpoints.xxl)
-      height: 390px
+      height: 400px
       border-radius: 25px
 
   &__bottom-text
@@ -173,13 +173,13 @@
       flex-direction: row
       flex-wrap: wrap
       width 400px
-      padding 28px 38px
+      padding 20px 38px
     +above($breakpoints.md)
       width 500px
-      padding 38px 48px
+      padding 30px 48px
     +above($breakpoints.xxl)
       width 680px
-      padding 48px 58px
+      padding 30px 58px
     button
       +above($breakpoints.sm)
         margin-top 2px
@@ -195,3 +195,12 @@
     gap: 5px
     +above($breakpoints.sm)
       flex-direction: row
+
+  &__agree-wrapper
+    margin-top 5px
+    +above($breakpoints.sm)
+      margin-top 10px
+
+  &__agree-wrapper .agree__text
+    +above($breakpoints.sm)
+      display: block

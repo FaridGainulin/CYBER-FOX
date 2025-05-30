@@ -44,4 +44,6 @@ section.about-section
             input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
             input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
           button.btn(type="submit") Задать вопрос
+          .about-section__agree-wrapper
+            include ../components/agree.pug
   include ../components/start-section.pug
